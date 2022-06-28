@@ -18,8 +18,9 @@ requirements:
     - cmake
     - ninja
   host:
-    - eigen
-
+    - eigen =3.0.*
+  run:
+    - eigen =3.0.*
 test:
   commands:
     - test -f $PREFIX/include/LBFGS.h  # [unix]
